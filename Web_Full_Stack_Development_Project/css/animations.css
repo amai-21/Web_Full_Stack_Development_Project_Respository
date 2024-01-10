@@ -1,0 +1,32 @@
+body{background-color:cyan;}
+/*This is just to set the elements aligned at the center.*/
+
+   #movetxt{
+       animation:moving 4s infinite;
+       -webkit-animation: changing 4s infinite;
+position:relative;
+       animation-direction:alternate-reverse;
+       -webkit-animation-direction: alternate-reverse;
+   }
+
+
+    @-webkit-keyframes changing{
+        from{-webkit-transform:translateY(0px);}
+to{-webkite-transform:translateY(500px);}
+    }
+
+@keyframes changing{
+    from{transform:translateY(0px); color:green;}
+    /*Test with translateX later*/
+    to{transform:translateY(500px); color:red;}
+}
+
+
+
+
+
+
+
+
+
+
